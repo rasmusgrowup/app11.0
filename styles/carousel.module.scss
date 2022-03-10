@@ -1,0 +1,31 @@
+@import 'sizes.scss';
+
+.wrapper {
+  align-items: flex-end;
+  display: flex;
+  margin: 3rem -1rem 4rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+
+  @media (max-width: $m) {
+    margin: 2.5rem -1rem 1.5rem 0
+  }
+}
+
+.image {
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  min-width: 20vw;
+
+  @media (max-width: $m) {
+    min-width: 50vw;
+  }
+
+  span {
+    font-size: max(1vw, 12px);
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+}

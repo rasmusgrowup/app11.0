@@ -1,0 +1,65 @@
+@import 'sizes.scss';
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+
+.logoType {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desktopMenu ul {
+  display: flex;
+  list-style-type: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  li {
+    margin-left: 1rem;
+  }
+}
+
+.mobileMenu {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mobileMenu span {
+  margin: 2px 0;
+}
+
+.mobileMenu span:first-of-type {
+  background-color: var(--main);
+  content: '';
+  display: block;
+  height: 4px;
+  width: 2rem;
+}
+
+.mobileMenu span:last-of-type {
+  background-color: var(--main);
+  content: '';
+  display: block;
+  height: 4px;
+  width: 1rem;
+}
+
+@media (max-width: $m) {
+  .desktopMenu {
+    display: none;
+  }
+}
+
+@media (min-width: $m) {
+  .mobileMenu {
+    display: none;
+  }
+}
