@@ -21,7 +21,11 @@ export default function Home() {
           Vi er et lille <span style={{ color: 'var(--red)'}}>nærværende</span> designstudie i Odense C. Vi hjælper jeres brand med at finde sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider
         </h1>
         <p className={typography.indexParagraph}>
-          Vi tilbyder <span style={{ color: 'var(--pink)'}}>art direction</span>, <span style={{ color: 'var(--red)'}}>visuelt design</span> og <span style={{ color: 'var(--orange)'}}>webudvikling</span> — vi kan med andre ord hjælpe jer fra idé til færdig hjemmeside. Med vores <span style={{ color: 'var(--light)'}}>abonnementer</span> kan i desuden let og billigt få opdateret indholdet løbende på jeres hjemmeside og sociale medier
+          Vi tilbyder <span style={{ color: 'var(--pink)'}}>art direction</span>, <span style={{ color: 'var(--red)'}}>visuelt design</span> og <span style={{ color: 'var(--orange)'}}>webudvikling</span> — vi kan med andre ord hjælpe jer fra idé til færdig hjemmeside. Med vores <span style={{ color: 'var(--light)'}}>abonnementer</span> kan i desuden let og billigt holde jeres hjemmeside og sociale medier opdateret med nyt indhold — så i ikke går i glemmebogen
+        </p>
+        <h2 className={typography.indexTitle} style={{ color: 'var(--light)', marginBottom: '0' }}>— Shopify</h2>
+        <p className={typography.indexParagraph}>
+          Leder i efter en skarp partner, der kan hjælpe jer i mål med en moderne ecommerce-løsning? Vi er Shopify-partnere, og leverer smukke og brugervenlige netbutikker, der er bygget på Shopify's geniale ecommerce platform.
         </p>
         <div>
           <ul className={typography.list}>
