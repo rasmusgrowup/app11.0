@@ -1,11 +1,15 @@
 import '../styles/globals.css'
+import "flickity/css/flickity.css";
 import Layout from '../components/Layout'
+import { MenuProvider } from "../lib/menuContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <MenuProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </MenuProvider>
   )
 }
 

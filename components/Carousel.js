@@ -1,18 +1,30 @@
 import scss from '../styles/carousel.module.scss'
 import images from '../utils/work.js'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { useRef, useEffect, useState } from 'react'
 
-export default function Carousel() {
+function Carousel() {
+  const carousel = useRef(null);
+
   return (
     <>
-      <section className={scss.wrapper}>
-        {images.map(({title, url, height, width}) => (
-          <div className={scss.image} key={title}>
-            <Image src={url} height={height} width={width} quality='100'/>
-            <span>{title}</span>
-          </div>
-        ))}
-      </section>
+      <motion.div className={scss.wrapper} ref={carousel}>
+        <motion.div
+          drag='x'
+          dragConstraints={carousel}
+          dragElastic={0.025}
+          className={scss.inner}>
+            {images.map(({title, url, height, width, id}) => (
+              <motion.div className={scss.image} key={id}>
+                <Image src={url} layout='responsive' height={height} width={width} quality='100'/>
+                <span>{title}</span>
+              </motion.div>
+            ))}
+        </motion.div>
+      </motion.div>
     </>
   )
 }
+
+export default Carousel

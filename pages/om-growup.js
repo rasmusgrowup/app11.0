@@ -1,12 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Carousel from '../components/Carousel'
 import typography from '../styles/typography.module.scss'
 import references from '../utils/references.js'
-import effects from '../styles/effects.module.scss'
 import layout from '../styles/layout.module.scss'
 
-export default function Home() {
+export default function Om() {
   return (
     <>
       <Head>
@@ -14,15 +11,10 @@ export default function Home() {
         <meta name="description" content="Vi er et lille nærværende designstudie i Odense C. Vi hjælper jeres brand med at finde ind til sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Carousel />
-      <div className={layout.indexContent}>
-        <div className={effects.gradientOverlay}></div>
-        <h1 className={typography.indexTitle}>
-          Vi er et lille <span style={{ color: 'var(--red)'}}>nærværende</span> designstudie i Odense C. Vi hjælper jeres brand med at finde sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider
+      <div className={typography.about}>
+        <h1 className={typography.aboutTitle}>
+          Growup Studio er et nærværende designstudie med kontor i hjertet af Odense<br/><br/>Vi hjælper virksomheder med at få styr på deres branding, hjemmesider og netbutikker
         </h1>
-        <p className={typography.indexParagraph}>
-          Vi tilbyder <span style={{ color: 'var(--pink)'}}>art direction</span>, <span style={{ color: 'var(--red)'}}>visuelt design</span> og <span style={{ color: 'var(--orange)'}}>webudvikling</span> — vi kan med andre ord hjælpe jer fra idé til færdig hjemmeside. Med vores <span style={{ color: 'var(--light)'}}>abonnementer</span> kan i desuden let og billigt få opdateret indholdet løbende på jeres hjemmeside og sociale medier
-        </p>
         <div>
           <ul className={typography.list}>
             <li style={{ color: 'var(--light)'}}>— services</li>

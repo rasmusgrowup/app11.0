@@ -1,0 +1,39 @@
+@import 'sizes.scss';
+
+.gradientOverlay {
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  -o-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+  background: linear-gradient(306deg, #00b7b8, #002354, #0068e0, #c400ff, #008499, #3b00ff);
+    background-size: 1200% 1200%;
+  height: 100%;
+  left: 0;
+  mix-blend-mode: screen;
+  position: fixed;
+  top: 0;
+  opacity: 0.75;
+  width: 100%;
+  display: none;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 67%}
+    50%{background-position:100% 34%}
+    100%{background-position:0% 67%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 67%}
+    50%{background-position:100% 34%}
+    100%{background-position:0% 67%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 67%}
+    50%{background-position:100% 34%}
+    100%{background-position:0% 67%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 67%}
+    50%{background-position:100% 34%}
+    100%{background-position:0% 67%}
+}
