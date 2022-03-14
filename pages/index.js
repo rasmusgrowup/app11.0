@@ -25,7 +25,7 @@ export default function Home() {
         </p>
         <h2 className={typography.indexTitle} style={{ color: 'var(--light)', marginBottom: '0' }}>— Shopify</h2>
         <p className={typography.indexParagraph}>
-          Leder i efter en skarp partner, der kan hjælpe jer i mål med en moderne ecommerce-løsning? Vi er Shopify-partnere, og leverer smukke og brugervenlige netbutikker, der er bygget på Shopify's geniale ecommerce platform.
+          Leder i efter en skarp partner, der kan hjælpe jer i mål med en moderne ecommerce-løsning? Vi er Shopify-partnere, og leverer smukke og brugervenlige netbutikker, der er bygget på Shopify&apos;s geniale ecommerce platform.
         </p>
         <div>
           <ul className={typography.list}>
