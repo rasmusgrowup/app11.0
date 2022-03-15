@@ -39,7 +39,7 @@ export default function Cursor() {
       borderRadius: '40px',
     },
     write: {
-      backgroundColor: 'var(--black)',
+      backgroundColor: 'var(--lightGrey)',
       fontSize: '32px',
       height: 80,
       width: 80,
@@ -97,6 +97,13 @@ export default function Cursor() {
     },
     subscription: {
       backgroundColor: 'var(--light)',
+      fontSize: '40px',
+      height: 80,
+      width: 80,
+      borderRadius: '40px',
+    },
+    map: {
+      backgroundColor: 'var(--lightGrey)',
       fontSize: '40px',
       height: 80,
       width: 80,
@@ -177,6 +184,11 @@ export default function Cursor() {
     setCursorText('🤝')
   }
 
+  const setMapVariant = () => {
+    setCursorVariant('map')
+    setCursorText('🚁')
+  }
+
   useEffect(() => {
     {
       cursorType === 'drag' ? setDragVariant()
@@ -200,6 +212,8 @@ export default function Cursor() {
       cursorType === 'web' ? setWebVariant()
       :
       cursorType === 'subscription' ? setSubscriptionVariant()
+      :
+      cursorType === 'map' ? setMapVariant()
       : setDefaultVariant()
     }
   }, [cursorType])
