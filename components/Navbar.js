@@ -3,16 +3,22 @@ import Menu from '../components/Menu'
 import Link from 'next/link'
 import React, { useState, useContext } from 'react'
 import { MenuContext } from "../lib/menuContext";
+import { MouseContext } from '../lib/MouseContext.js'
 
 export default function Navbar() {
   const { toggle, toggleFunction } = useContext(MenuContext);
+  const { cursorType, cursorChangeHandler } = useContext(MouseContext);
 
   return (
     <>
       <header className={scss.mainHeader}>
-        <logo className={`${scss.logoType} ${ toggle == true ? `${scss.menuOpenedLogo}` : ''}`}>
+        <div
+          className={`${scss.logoType} ${ toggle == true ? `${scss.menuOpenedLogo}` : ''}`}
+          onMouseEnter={() => cursorChangeHandler("home")}
+          onMouseLeave={() => cursorChangeHandler("")}
+        >
           <Link href='/'><a>Growup Studio</a></Link>
-        </logo>
+        </div>
         <div className={scss.desktopMenu}>
           <Menu />
         </div>

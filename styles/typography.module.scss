@@ -52,3 +52,12 @@
     }
   }
 }
+
+.notOnHomePage .list {
+  font-size: max(4vw, 22px);
+  max-width: 70vw;
+
+  @media (max-width: $m) {
+    max-width: calc(100% - 1rem);
+  }
+}

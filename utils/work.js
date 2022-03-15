@@ -7,31 +7,32 @@ const workData = [
     id: '1'
   },
   {
-    title: 'The Organic Crave Company',
+    title: 'Art Direction',
     url: '/OrganicCrave.jpg',
-    height: '468',
+    height: '490',
     width: '397',
     id: '2'
   },
   {
-    title: 'Twelve Inch',
-    url: '/TwelveInch.jpg',
-    height: '331',
-    width: '470',
+    title: 'Behind the Scenes',
+    url: '/OrganicCrave_3.jpg',
+    height: '429',
+    width: '600',
     id: '3'
+  },
+  {
+    title: 'Tinekhome',
+    url: '/Tinekhome.mp4',
+    height: '400',
+    width: '340',
+    id: '4',
+    type: 'video'
   },
   {
     title: 'Twelve Inch',
     url: '/TwelveInch_2.jpg',
-    height: '468',
+    height: '480',
     width: '340',
-    id: '4'
-  },
-  {
-    title: 'The Organic Crave Company',
-    url: '/OrganicCrave_2.jpg',
-    height: '380',
-    width: '462',
     id: '5'
   },
   {

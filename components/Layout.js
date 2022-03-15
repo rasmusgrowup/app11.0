@@ -1,9 +1,11 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { useEffect, useState } from 'react'
+import Cursor from '../components/Cursor'
+
+import React, { useEffect } from 'react'
+import { isMobile, CustomView } from 'react-device-detect'
 
 export default function Layout({ children }) {
-
   useEffect (() => {
     if (window.sessionStorage.getItem("firstLoadDone") === null) {
       window.sessionStorage.setItem("firstLoadDone", 1)
@@ -12,8 +14,11 @@ export default function Layout({ children }) {
 
   return (
     <>
+      <CustomView condition={!isMobile}>
+        <Cursor />
+      </CustomView>
       <Navbar />
-        <main>{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   )
