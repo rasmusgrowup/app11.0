@@ -102,6 +102,13 @@ export default function Cursor() {
       width: 80,
       borderRadius: '40px',
     },
+    shop: {
+      backgroundColor: 'var(--green)',
+      fontSize: '40px',
+      height: 80,
+      width: 80,
+      borderRadius: '40px',
+    },
     subscription: {
       backgroundColor: 'var(--light)',
       fontSize: '40px',
@@ -191,6 +198,11 @@ export default function Cursor() {
     setCursorText('⌨️')
   }
 
+  const setShopVariant = () => {
+    setCursorVariant('shop')
+    setCursorText('💰')
+  }
+
   const setSubscriptionVariant = () => {
     setCursorVariant('subscription')
     setCursorText('🤝')
@@ -224,6 +236,8 @@ export default function Cursor() {
       cursorType === 'design' ? setDesignVariant()
       :
       cursorType === 'web' ? setWebVariant()
+      :
+      cursorType === 'shop' ? setShopVariant()
       :
       cursorType === 'subscription' ? setSubscriptionVariant()
       :
