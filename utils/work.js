@@ -19,7 +19,7 @@ const workData = [
   },
   {
     title: 'Behind the Scenes',
-    url: '/OrganicCrave_3.jpg',
+    url: '/TwelveInch.jpg',
     height: '429',
     width: '600',
     id: '3',
@@ -45,46 +45,46 @@ const workData = [
     bg: 'var(--light)'
   },
   {
-    title: 'ByMickleit',
-    url: '/ByMickleit.jpg',
+    title: 'The Organic Crave Company',
+    url: '/ByMickleitVideo.mp4',
     height: '468',
-    width: '312',
+    width: '397',
     id: '6',
-    type: 'image',
+    type: 'video',
     bg: 'var(--black)'
   },
   {
-    title: 'The Organic Crave Company',
-    url: '/OrganicCrave.jpg',
-    height: '468',
-    width: '397',
+    title: 'Twelve Inch',
+    url: '/OrganicCrave_3.jpg',
+    height: '331',
+    width: '470',
     id: '7',
     type: 'image',
-    bg: 'var(--red)'
+    bg: 'var(--lightGrey)'
   },
   {
     title: 'Twelve Inch',
-    url: '/TwelveInch.jpg',
-    height: '331',
-    width: '470',
+    url: '/OrganicCrave_5.jpg',
+    height: '450',
+    width: '450',
     id: '8',
     type: 'image',
     bg: 'var(--lightGrey)'
   },
   {
     title: 'Twelve Inch',
-    url: '/TwelveInch_2.jpg',
+    url: '/OrganicVideo_3.mp4',
     height: '468',
     width: '340',
     id: '9',
-    type: 'image',
+    type: 'video',
     bg: 'var(--blue)'
   },
   {
     title: 'The Organic Crave Company',
-    url: '/OrganicCrave_2.jpg',
-    height: '380',
-    width: '462',
+    url: '/OrganicCrave_4.jpg',
+    height: '700',
+    width: '500',
     id: '10',
     type: 'image',
     bg: 'var(--red)'

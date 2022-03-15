@@ -49,7 +49,7 @@ function Carousel() {
                     playsInline
                     style={{ objectFit: 'cover', objectPosition: 'center' }}
                     width='100%'
-                    height='100%'
+                    height='auto'
                     alt=''
                     >
                     <source src={url} type='video/mp4' />
