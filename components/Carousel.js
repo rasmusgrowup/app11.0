@@ -37,11 +37,11 @@ function Carousel() {
               <motion.div className={scss.image} key={id} style={{ backgroundColor: `${bg}`}}>
               {
                 type != 'video' ?
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, delay: 1 }}>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
                   <Image src={url} layout='responsive' objectFit='cover' objectPosition='center' height={height} width={width} quality='100'/>
                 </motion.div>
                 :
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, delay: 1 }} style={{ display: 'flex' }}>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} style={{ display: 'flex' }}>
                   <video
                     autoPlay
                     muted
