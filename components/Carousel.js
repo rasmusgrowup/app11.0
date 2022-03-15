@@ -33,24 +33,28 @@ function Carousel() {
           dragConstraints={carousel}
           dragElastic={0.025}
           className={`${scss.inner} grab`}>
-            {images.map(({title, url, height, width, id, type}) => (
-              <motion.div className={scss.image} key={id}>
+            {images.map(({title, url, height, width, id, type, bg}) => (
+              <motion.div className={scss.image} key={id} style={{ backgroundColor: `${bg}`}}>
               {
                 type != 'video' ?
-                <Image src={url} layout='responsive' objectFit='cover' objectPosition='center' height={height} width={width} quality='100'/>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, delay: 1 }}>
+                  <Image src={url} layout='responsive' objectFit='cover' objectPosition='center' height={height} width={width} quality='100'/>
+                </motion.div>
                 :
-                <video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  style={{ objectFit: 'cover', objectPosition: 'center' }}
-                  width='100%'
-                  height='100%'
-                  alt=''
-                  >
-                  <source src={url} type='video/mp4' />
-                </video>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2, delay: 1 }} style={{ display: 'flex' }}>
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    style={{ objectFit: 'cover', objectPosition: 'center' }}
+                    width='100%'
+                    height='100%'
+                    alt=''
+                    >
+                    <source src={url} type='video/mp4' />
+                  </video>
+                </motion.div>
               }
                 <span style={{ display: 'none' }}>{title}</span>
               </motion.div>
