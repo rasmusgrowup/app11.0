@@ -81,6 +81,13 @@ export default function Cursor() {
       width: 80,
       borderRadius: '40px',
     },
+    branding: {
+      backgroundColor: 'var(--black)',
+      fontSize: '40px',
+      height: 80,
+      width: 80,
+      borderRadius: '40px',
+    },
     design: {
       backgroundColor: 'var(--red)',
       fontSize: '40px',
@@ -169,9 +176,14 @@ export default function Cursor() {
     setCursorText('📸')
   }
 
+  const setBrandingVariant = () => {
+    setCursorVariant('branding')
+    setCursorText('👕')
+  }
+
   const setDesignVariant = () => {
     setCursorVariant('design')
-    setCursorText('✏️')
+    setCursorText('🎭')
   }
 
   const setWebVariant = () => {
@@ -206,6 +218,8 @@ export default function Cursor() {
       cursorType === 'pitch' ? setPitchVariant()
       :
       cursorType === 'camera' ? setCameraVariant()
+      :
+      cursorType === 'branding' ? setBrandingVariant()
       :
       cursorType === 'design' ? setDesignVariant()
       :

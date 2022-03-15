@@ -2,7 +2,8 @@
 
 .indexTitle,
 .aboutTitle,
-.indexParagraph {
+.indexParagraph,
+.aboutParagraph {
   font-size: max(3vw, 22px);
   font-weight: bold;
   margin-bottom: 4rem;
@@ -43,6 +44,7 @@
   }
 
   .aboutTitle,
+  .aboutParagraph,
   .list {
     font-size: max(4vw, 22px);
     max-width: 70vw;

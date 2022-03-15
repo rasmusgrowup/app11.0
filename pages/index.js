@@ -26,7 +26,8 @@ export default function Home() {
           Vi er et lille <span style={{ color: 'var(--red)'}} onMouseEnter={() => cursorChangeHandler("heart")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>nærværende</span> designstudie i Odense C. Vi hjælper jeres brand med at finde sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider
         </h1>
         <p className={typography.indexParagraph}>
-          Vi tilbyder <span style={{ color: 'var(--pink)'}} onMouseEnter={() => cursorChangeHandler("camera")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>art direction</span>, <span style={{ color: 'var(--red)'}} onMouseEnter={() => cursorChangeHandler("design")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>visuelt design</span> og <span style={{ color: 'var(--orange)'}} onMouseEnter={() => cursorChangeHandler("web")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>webudvikling</span> — vi kan med andre ord hjælpe jer fra idé til færdig hjemmeside. Med vores <span style={{ color: 'var(--light)'}} onMouseEnter={() => cursorChangeHandler("subscription")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>abonnementer</span> kan i desuden let og billigt holde jeres hjemmeside og sociale medier opdateret med nyt indhold
+          Vi tilbyder <span style={{ color: 'var(--pink)'}} onMouseEnter={() => cursorChangeHandler("camera")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>art direction</span>,
+          <span style={{ color: 'var(--black)'}} onMouseEnter={() => cursorChangeHandler("branding")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'> branding</span>, <span style={{ color: 'var(--red)'}} onMouseEnter={() => cursorChangeHandler("design")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>identitetsdesign</span> og <span style={{ color: 'var(--orange)'}} onMouseEnter={() => cursorChangeHandler("web")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>webudvikling</span> — vi kan med andre ord hjælpe jer fra idé til færdig hjemmeside. Med vores <span style={{ color: 'var(--light)'}} onMouseEnter={() => cursorChangeHandler("subscription")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>abonnementer</span> kan i desuden let og billigt holde jeres hjemmeside og sociale medier opdateret med nyt indhold
         </p>
         <div>
           <h2 className={typography.indexTitle} style={{ color: 'var(--light)', marginBottom: '0' }}>— Shopify</h2>
@@ -39,10 +40,10 @@ export default function Home() {
             <li style={{ color: 'var(--light)'}}>— services</li>
             <li>Art Direction</li>
             <li>Branding</li>
+            <li>Identitetsdesign</li>
             <li>React Hjemmesider</li>
             <li>Shopify Netbutikker</li>
             <li>Søgemaskineoptimering</li>
-            <li>Visuelle Identiteter</li>
           </ul>
         </div>
         <div>
