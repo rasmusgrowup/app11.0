@@ -23,7 +23,7 @@ export default function Home() {
       <div className={layout.indexContent}>
         <div className={effects.gradientOverlay}></div>
         <h1 className={typography.indexTitle}>
-          Vi er et lille <span style={{ color: 'var(--red)'}} onMouseEnter={() => cursorChangeHandler("heart")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>nærværende</span> designstudie i Odense C. Vi hjælper jeres brand med at finde sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider
+          Vi er et lille <span style={{ color: 'var(--red)'}} onMouseEnter={() => cursorChangeHandler("heart")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>nærværende</span> designstudie i Odense C. Vi hjælper jeres brand med at finde sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce-løsninger og React hjemmesider
         </h1>
         <p className={typography.indexParagraph}>
           Vi tilbyder <span style={{ color: 'var(--pink)'}} onMouseEnter={() => cursorChangeHandler("camera")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>art direction</span>,
