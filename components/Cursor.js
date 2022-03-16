@@ -45,6 +45,13 @@ export default function Cursor() {
       width: 80,
       borderRadius: '40px',
     },
+    writeMale: {
+      backgroundColor: 'var(--lightGrey)',
+      fontSize: '32px',
+      height: 80,
+      width: 80,
+      borderRadius: '40px',
+    },
     heart: {
       backgroundColor: '#ffffff00',
       fontSize: '40px',
@@ -61,7 +68,7 @@ export default function Cursor() {
     },
     about: {
       backgroundColor: 'var(--light)',
-      fontSize: '21px',
+      fontSize: '32px',
       height: 80,
       width: 80,
       borderRadius: '40px',
@@ -122,6 +129,20 @@ export default function Cursor() {
       height: 80,
       width: 80,
       borderRadius: '40px',
+    },
+    adult: {
+      backgroundColor: 'var(--light)',
+      fontSize: '40px',
+      height: 80,
+      width: 80,
+      borderRadius: '40px',
+    },
+    child: {
+      backgroundColor: 'var(--light)',
+      fontSize: '40px',
+      height: 80,
+      width: 80,
+      borderRadius: '40px',
     }
   };
 
@@ -158,6 +179,11 @@ export default function Cursor() {
     setCursorText('👩‍💻')
   }
 
+  const setWriteMaleVariant = () => {
+    setCursorVariant('writeMale')
+    setCursorText('👨‍💻')
+  }
+
   const setHeartVariant = () => {
     setCursorVariant('heart')
     setCursorText('❤️')
@@ -170,7 +196,7 @@ export default function Cursor() {
 
   const setAboutVariant = () => {
     setCursorVariant('about')
-    setCursorText('Læs')
+    setCursorText('👨‍💼')
   }
 
   const setPitchVariant = () => {
@@ -213,6 +239,16 @@ export default function Cursor() {
     setCursorText('🚁')
   }
 
+  const setAdultVariant = () => {
+    setCursorVariant('adult')
+    setCursorText('👨‍🦰')
+  }
+
+  const setChildVariant = () => {
+    setCursorVariant('child')
+    setCursorText('👶')
+  }
+
   useEffect(() => {
     {
       cursorType === 'drag' ? setDragVariant()
@@ -220,6 +256,8 @@ export default function Cursor() {
       cursorType === 'call' ? setCallVariant()
       :
       cursorType === 'write' ? setWriteVariant()
+      :
+      cursorType === 'writeMale' ? setWriteMaleVariant()
       :
       cursorType === 'home' ? setHomeVariant()
       :
@@ -242,6 +280,10 @@ export default function Cursor() {
       cursorType === 'subscription' ? setSubscriptionVariant()
       :
       cursorType === 'map' ? setMapVariant()
+      :
+      cursorType === 'adult' ? setAdultVariant()
+      :
+      cursorType === 'child' ? setChildVariant()
       : setDefaultVariant()
     }
   }, [cursorType])

@@ -41,7 +41,7 @@ function Carousel() {
                   <Image src={url} layout='responsive' objectFit='cover' objectPosition='center' height={height} width={width} quality='100'/>
                 </motion.div>
                 :
-                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} style={{ display: 'flex' }}>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} className={scss.videoWrapper}>
                   <video
                     autoPlay
                     muted

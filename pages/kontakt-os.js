@@ -23,7 +23,7 @@ export default function Kontakt() {
         <li>Webudvikling / brandudvikling</li>
         <li
           style={{ color: 'var(--light)'}}
-          onMouseEnter={() => cursorChangeHandler("write")}
+          onMouseEnter={() => cursorChangeHandler("writeMale")}
           onMouseLeave={() => cursorChangeHandler("")}
           className='noMouse'
           ><Link href='mailto:rasmus@growupstudio.dk'><a className='noMouse'>rasmus@growupstudio.dk</a></Link></li>
