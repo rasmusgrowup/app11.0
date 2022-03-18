@@ -38,7 +38,7 @@ function Carousel() {
               {
                 type != 'video' ?
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }}>
-                  <Image src={url} layout='responsive' objectFit='cover' objectPosition='center' height={height} width={width} quality='100'/>
+                  <Image src={url} layout='responsive' objectFit='cover' objectPosition='center' height={height} width={width} quality='100' sizes='30vw'/>
                 </motion.div>
                 :
                 <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 1 }} className={scss.videoWrapper}>
