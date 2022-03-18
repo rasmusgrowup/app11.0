@@ -12,9 +12,8 @@ export default function Om() {
   return (
     <>
       <Head>
-        <title>Growup | Ecommerce i verdensklasse</title>
-        <meta name="description" content="Vi er et lille nærværende designstudie i Odense C. Vi hjælper jeres brand med at finde ind til sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Nærverende fynsk designstudie | Branding, hjemmesider og netbutikker</title>
+        <meta name="description" content="Vi hjælper start-ups og etablerede virksomheder med at få styr på deres branding, identitet, hjemmesider og netbutikker" />
       </Head>
       <div className={typography.about}>
         <h1 className={typography.aboutTitle}>

@@ -13,8 +13,8 @@ export default function Kontakt() {
   return(
     <>
       <Head>
-        <title>Growup | Ecommerce i verdensklasse</title>
-        <meta name="description" content="Vi er et lille nærværende designstudie i Odense C. Vi hjælper jeres brand med at finde ind til sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider" />
+        <title>Growup | Få et uforpligtende tilbud på Shopify-løsninger, React hjemmesider eller udvikling af jeres brand</title>
+        <meta name="description" content="Få et uforpligtende tilbud på jeres nye hjemmeside eller webshop. Vi leverer markedets bedste ecommerce-løsninger og personlige hjemmesider" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={typography.contact}>

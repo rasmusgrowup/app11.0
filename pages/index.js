@@ -15,9 +15,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Growup | Ecommerce i verdensklasse</title>
-        <meta name="description" content="Vi er et lille nærværende designstudie i Odense C. Vi hjælper jeres brand med at finde ind til sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce hjemmesider" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Growup | Branding, hjemmesider og netbutikker til start-ups og etablerede brands</title>
+        <meta name="description" content="Vi er et lille nærværende designstudie i Odense C. Vi hjælper jeres brand med at finde sin visuelle identitet, og kører jer i stilling med markedets flotteste ecommerce-løsninger og hjemmesider" />
       </Head>
       <Carousel/>
       <div className={layout.indexContent}>
