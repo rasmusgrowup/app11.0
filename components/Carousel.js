@@ -8,6 +8,7 @@ import { MouseContext } from '../lib/MouseContext.js'
 function Carousel() {
   const carousel = useRef(null);
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+  const [loaded, setLoaded] = useState(false);
 
   const mouseDown = (e) => {
     carousel.current.style.cursor = 'none'
@@ -30,6 +31,7 @@ function Carousel() {
         >
         <motion.div
           drag='x'
+          dragDirectionLock
           dragConstraints={carousel}
           dragElastic={0.04}
           className={`${scss.inner} noMouse`}>
