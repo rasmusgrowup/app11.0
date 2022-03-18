@@ -4,6 +4,8 @@ import Head from "next/head";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { MouseContext } from '../lib/MouseContext.js'
 
+import rasmus from '../public/rasmus.jpg'
+
 export default function Cursor() {
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
   const [cursorText, setCursorText] = useState("");
@@ -21,7 +23,7 @@ export default function Cursor() {
       backgroundColor: '#C400FF',
       height: 24,
       width: 24,
-      borderRadius: '12px'
+      borderRadius: '12px',
     },
     drag: {
       backgroundColor: 'var(--red)',
@@ -29,7 +31,7 @@ export default function Cursor() {
       height: 80,
       width: 80,
       fontSize: '24px',
-      borderRadius: '40px'
+      borderRadius: '40px',
     },
     call: {
       backgroundColor: 'var(--lightGrey)',
@@ -39,13 +41,6 @@ export default function Cursor() {
       borderRadius: '40px',
     },
     write: {
-      backgroundColor: 'var(--lightGrey)',
-      fontSize: '32px',
-      height: 80,
-      width: 80,
-      borderRadius: '40px',
-    },
-    writeMale: {
       backgroundColor: 'var(--lightGrey)',
       fontSize: '32px',
       height: 80,
@@ -143,6 +138,24 @@ export default function Cursor() {
       height: 80,
       width: 80,
       borderRadius: '40px',
+    },
+    rasmus: {
+      backgroundColor: 'var(--light)',
+      backgroundImage: 'url(/rasmus.jpg)',
+      backgroundSize: 'cover',
+      fontSize: '40px',
+      height: 140,
+      width: 140,
+      borderRadius: '70px',
+    },
+    rie: {
+      backgroundColor: 'var(--light)',
+      backgroundImage: 'url(/rie.jpg)',
+      backgroundSize: 'cover',
+      fontSize: '40px',
+      height: 140,
+      width: 140,
+      borderRadius: '70px',
     }
   };
 
@@ -177,11 +190,6 @@ export default function Cursor() {
   const setWriteVariant = () => {
     setCursorVariant('write')
     setCursorText('👩‍💻')
-  }
-
-  const setWriteMaleVariant = () => {
-    setCursorVariant('writeMale')
-    setCursorText('👨‍💻')
   }
 
   const setHeartVariant = () => {
@@ -249,6 +257,16 @@ export default function Cursor() {
     setCursorText('👶')
   }
 
+  const setRasmusVariant = () => {
+    setCursorVariant('rasmus')
+    setCursorText('')
+  }
+
+  const setRieVariant = () => {
+    setCursorVariant('rie')
+    setCursorText('')
+  }
+
   useEffect(() => {
     {
       cursorType === 'drag' ? setDragVariant()
@@ -256,8 +274,6 @@ export default function Cursor() {
       cursorType === 'call' ? setCallVariant()
       :
       cursorType === 'write' ? setWriteVariant()
-      :
-      cursorType === 'writeMale' ? setWriteMaleVariant()
       :
       cursorType === 'home' ? setHomeVariant()
       :
@@ -284,6 +300,10 @@ export default function Cursor() {
       cursorType === 'adult' ? setAdultVariant()
       :
       cursorType === 'child' ? setChildVariant()
+      :
+      cursorType === 'rasmus' ? setRasmusVariant()
+      :
+      cursorType === 'rie' ? setRieVariant()
       : setDefaultVariant()
     }
   }, [cursorType])

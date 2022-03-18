@@ -30,9 +30,9 @@ export default function Home() {
           <span style={{ color: 'var(--black)'}} onMouseEnter={() => cursorChangeHandler("branding")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'> branding</span>, <span style={{ color: 'var(--red)'}} onMouseEnter={() => cursorChangeHandler("design")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>identitetsdesign</span> og <span style={{ color: 'var(--orange)'}} onMouseEnter={() => cursorChangeHandler("web")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>webudvikling</span> — vi kan med andre ord hjælpe jer fra idé til færdig hjemmeside. Med vores <span style={{ color: 'var(--light)'}} onMouseEnter={() => cursorChangeHandler("subscription")} onMouseLeave={() => cursorChangeHandler("")} className='noMouse'>abonnementer</span> kan i desuden let og billigt holde jeres hjemmeside og sociale medier opdateret med nyt indhold
         </p>
         <div>
-          <h2 className={typography.indexTitle} style={{ color: 'var(--light)', marginBottom: '0' }}>— Shopify</h2>
+          <h2 className={typography.indexTitle} style={{ color: 'var(--light)', marginBottom: '0' }}>— Et lille fælleskab</h2>
           <p className={typography.indexParagraph}>
-            Leder i efter en skarp partner, der kan hjælpe jer i mål med en moderne ecommerce-løsning? Vi er Shopify-partnere, og leverer smukke og brugervenlige netbutikker, der er bygget på Shopifys geniale ecommerce platform
+            Growup er en lille virksomhed, men vi benytter os af professionelle partnere for at løse vores kunders udfordringer. Vi kan derfor løse store såvel som små opgaver. Vi har bl.a. et samarbejde med fotografer, SEO-eksperter, art directors m.fl
           </p>
         </div>
         <div>

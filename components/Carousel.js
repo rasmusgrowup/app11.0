@@ -10,18 +10,18 @@ function Carousel() {
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
 
   const mouseDown = (e) => {
-    carousel.current.style.cursor = 'grabbing'
+    carousel.current.style.cursor = 'none'
     e.preventDefault();
   }
 
   const mouseUp = (e) => {
-    carousel.current.style.cursor = 'default'
+    carousel.current.style.cursor = 'none'
   }
 
   return (
     <>
       <motion.div
-        className={`${scss.wrapper} grab`}
+        className={`${scss.wrapper} noMouse`}
         ref={carousel}
         onMouseEnter={() => cursorChangeHandler("drag")}
         onMouseLeave={() => cursorChangeHandler("")}
@@ -31,8 +31,8 @@ function Carousel() {
         <motion.div
           drag='x'
           dragConstraints={carousel}
-          dragElastic={0.025}
-          className={`${scss.inner} grab`}>
+          dragElastic={0.04}
+          className={`${scss.inner} noMouse`}>
             {images.map(({title, url, height, width, id, type, bg}) => (
               <motion.div className={scss.image} key={id} style={{ backgroundColor: `${bg}`}}>
               {

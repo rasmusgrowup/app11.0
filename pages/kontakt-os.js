@@ -23,7 +23,7 @@ export default function Kontakt() {
         <li>Webudvikling / brandudvikling</li>
         <li
           style={{ color: 'var(--light)'}}
-          onMouseEnter={() => cursorChangeHandler("writeMale")}
+          onMouseEnter={() => cursorChangeHandler("rasmus")}
           onMouseLeave={() => cursorChangeHandler("")}
           className='noMouse'
           ><Link href='mailto:rasmus@growupstudio.dk'><a className='noMouse'>rasmus@growupstudio.dk</a></Link></li>
@@ -33,7 +33,7 @@ export default function Kontakt() {
         <li>Kommunikation / sociale medier</li>
         <li
           style={{ color: 'var(--light)'}}
-          onMouseEnter={() => cursorChangeHandler("write")}
+          onMouseEnter={() => cursorChangeHandler("rie")}
           onMouseLeave={() => cursorChangeHandler("")}
           className='noMouse'
         ><Link href='mailto:rie@growupstudio.dk'><a className='noMouse'>rie@growupstudio.dk</a></Link></li>
@@ -41,11 +41,9 @@ export default function Kontakt() {
       <ul className={typography.list}>
         <li>Besøg os på</li>
         <li style={{ color: 'var(--light)'}} onMouseEnter={() => cursorChangeHandler("map")}
-        onMouseLeave={() => cursorChangeHandler("")}
-        className='noMouse'><Link href='https://www.google.com/maps/place/Havnegade+100,+5000+Odense/@55.4256911,10.3892947,17z/data=!4m14!1m8!3m7!1s0x464ce018c284f609:0xfacc8b8bc34af4b!2sHavnegade+100,+5000+Odense!3b1!8m2!3d55.4256911!4d10.3914834!10e3!3m4!1s0x464ce018c284f609:0xfacc8b8bc34af4b!8m2!3d55.4256911!4d10.3914834'><a target='_blank'>Havnegade 100L</a></Link></li>
+        onMouseLeave={() => cursorChangeHandler("")}><Link href='https://www.google.com/maps/place/Havnegade+100,+5000+Odense/@55.4256911,10.3892947,17z/data=!4m14!1m8!3m7!1s0x464ce018c284f609:0xfacc8b8bc34af4b!2sHavnegade+100,+5000+Odense!3b1!8m2!3d55.4256911!4d10.3914834!10e3!3m4!1s0x464ce018c284f609:0xfacc8b8bc34af4b!8m2!3d55.4256911!4d10.3914834'><a className='noMouse' target='_blank'>Havnegade 100L</a></Link></li>
         <li style={{ color: 'var(--light)'}} onMouseEnter={() => cursorChangeHandler("map")}
-        onMouseLeave={() => cursorChangeHandler("")}
-        className='noMouse'><Link href='https://www.google.com/maps/place/Havnegade+100,+5000+Odense/@55.4256911,10.3892947,17z/data=!4m14!1m8!3m7!1s0x464ce018c284f609:0xfacc8b8bc34af4b!2sHavnegade+100,+5000+Odense!3b1!8m2!3d55.4256911!4d10.3914834!10e3!3m4!1s0x464ce018c284f609:0xfacc8b8bc34af4b!8m2!3d55.4256911!4d10.3914834'><a target='_blank'>Odense C, 5000</a></Link></li>
+        onMouseLeave={() => cursorChangeHandler("")}><Link href='https://www.google.com/maps/place/Havnegade+100,+5000+Odense/@55.4256911,10.3892947,17z/data=!4m14!1m8!3m7!1s0x464ce018c284f609:0xfacc8b8bc34af4b!2sHavnegade+100,+5000+Odense!3b1!8m2!3d55.4256911!4d10.3914834!10e3!3m4!1s0x464ce018c284f609:0xfacc8b8bc34af4b!8m2!3d55.4256911!4d10.3914834'><a className='noMouse' target='_blank'>Odense C, 5000</a></Link></li>
       </ul>
       </div>
     </>

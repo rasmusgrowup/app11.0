@@ -1,9 +1,5 @@
 const data = [
   {
-    title: 'Albers Interiør',
-    year: '2022',
-  },
-  {
     title: 'Byhåndværkeren',
     year: '2020',
   },
@@ -36,6 +32,10 @@ const data = [
     year: '2019',
   },
   {
+    title: 'Gambo Moments',
+    year: '2022',
+  },
+  {
     title: 'Hej Liv',
     year: '2022',
   },
@@ -53,10 +53,6 @@ const data = [
   },
   {
     title: 'Marias Rum',
-    year: '2022',
-  },
-  {
-    title: 'Mac Barren',
     year: '2022',
   },
   {
