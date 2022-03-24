@@ -56,6 +56,10 @@ const data = [
     year: '2022',
   },
   {
+    title: 'Pernille Albers',
+    year: '2022',
+  },
+  {
     title: 'PRAL',
     year: '2022',
   },

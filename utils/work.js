@@ -10,7 +10,7 @@ const workData = [
   },
   {
     title: 'Art Direction',
-    url: '/OrganicCrave.jpg',
+    url: '/OrganicCrave2.jpg',
     height: '490',
     width: '397',
     id: '2',
