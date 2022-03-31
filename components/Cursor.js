@@ -1,7 +1,8 @@
 import React from 'react'
-import { useEffect, useState, useContext } from "react";
-import Head from "next/head";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { useRouter } from 'next/router'
+import { useEffect, useState, useContext } from 'react'
+import Head from 'next/head'
+import { motion, useMotionValue, useSpring } from 'framer-motion'
 import { MouseContext } from '../lib/MouseContext.js'
 
 import rasmus from '../public/rasmus.jpg'

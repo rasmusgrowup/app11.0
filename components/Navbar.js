@@ -12,22 +12,10 @@ import Smile from '../public/smile.svg'
 export default function Navbar() {
   const { toggle, toggleFunction } = useContext(MenuContext);
   const { cursorType, cursorChangeHandler } = useContext(MouseContext);
-  const scroll = useScrollListener();
-  const [navClassList, setNavClassList] = useState([]);
-
-  useEffect(() => {
-    const _classList = [];
-
-    if (scroll.y > 150 && scroll.y - scroll.lastY > 0)
-      _classList.push(`${scss.push}`);
-
-    setNavClassList(_classList);
-
-  }, [scroll.y]);
 
   return (
     <>
-      <header className={`${scss.mainHeader} ${navClassList.join(" ")}`}>
+      <header className={scss.mainHeader}>
         <div className={scss.innerHeader}>
           <div
             className={`${scss.logoType} ${ toggle == true ? `${scss.menuOpenedLogo}` : ''}`}
