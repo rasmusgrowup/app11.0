@@ -32,10 +32,6 @@ const data = [
     year: '2019',
   },
   {
-    title: 'Gambo Moments',
-    year: '2022',
-  },
-  {
     title: 'Hej Liv',
     year: '2022',
   },
