@@ -309,6 +309,10 @@ export default function Cursor() {
     }
   }, [cursorType])
 
+  useEffect(() => (
+    cursorChangeHandler()
+  ), [])
+
   return (
     <motion.div
       variants={variants}
